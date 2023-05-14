@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+      function display() {
+    var username = document.getElementById("username");
+    var password = document.getElementById("password");
+    if (username.value === "") {
+        username.style.background = "#FF0000";
+        return false;
+    }
+    username.style.background = "#fff";
+    if (password.value === "") {
+        password.style.background = "#FF0000";
+        return false;
+    }
+    password.style.background = "#fff";
+    document.getElementById("answers").innerHTML = "User Name: <b>" +
+        username.value + "</b><br><br>" + "Password: <b>" +
+        password.value + "</b>";
+}
+    </script>
+  </head>
+  <body>
+    <h1>Login Page</h1>
+    <div id="box">
+      <fieldset>
+        <legend>User Authentication</legend>
+        <span>Username:</span>&nbsp;<input type="text" id="username" /><br />
+        <span>Password:</span>&nbsp;<input
+          type="password"
+          id="password"
+        /><br /><br />
+        <button id="submit" onclick="return display()">Log In</button>
+      </fieldset>
+    </div>
+    <br />
+    <div id="answers"></div>
+  </body>
+</html>

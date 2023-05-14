@@ -1,0 +1,24 @@
+#box{
+    background-color: rgb(224, 224, 163);
+    padding: 1em;
+    border:0.3em dashed #000
+}
+fieldset{
+    width: 20em;
+}
+legend{
+    font-size: 1.2em;
+}
+span{
+    font-family: monospace;
+    background-color: rgb(163, 162, 162);
+    color: #000;
+    font-size: 1.5em;
+}
+button{
+    margin-left: 1.2em;
+    font-size: 1.2em;
+}
+#answers{
+    font-size: 1.2em;
+}
